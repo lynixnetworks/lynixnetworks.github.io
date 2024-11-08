@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://lynixnetworks.github.io/sitemap.xml
