@@ -1,35 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//lynixnetworks.github.io/sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
   <loc>https://lynixnetworks.github.io/</loc>
   <lastmod>2024-11-08T09:23:21+00:00</lastmod>
-  <priority>1.00</priority>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynix-networks-it-solution.webp</image:loc>
+  </image:image>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynix-networks-it-solution.webp</image:loc>
+  </image:image>
+</url>
 </url>
 <url>
   <loc>https://lynixnetworks.github.io/about/</loc>
   <lastmod>2024-11-08T09:23:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
 </url>
 <url>
   <loc>https://lynixnetworks.github.io/services/</loc>
   <lastmod>2024-11-08T09:23:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
 </url>
 <url>
   <loc>https://lynixnetworks.github.io/backlinks/</loc>
   <lastmod>2024-11-08T09:23:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
 </url>
 <url>
   <loc>https://lynixnetworks.github.io/contact/</loc>
   <lastmod>2024-11-08T09:23:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
+  <image:image>
+	<image:loc>https://lynixnetworks.github.io/img/lynixnetworks.png</image:loc>
+  </image:image>
 </url>
 
 
