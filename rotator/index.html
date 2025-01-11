@@ -60,7 +60,7 @@ ym(99115405, "init", {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/99115405" style="position:absolute; left:-9999px;" alt="Mikrotik Cirebon, IT Solution Cirebon, Jaringan Komputer Cirebon" /></div></noscript>
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="LYeizU0HHSCoCp+SdhRRFQ" async></script>
-        <script>
+<script>
         const urls = [
             "https://www.lynixnetwork.com",
             "https://kesultanan-kanoman.blogspot.com",
@@ -69,25 +69,19 @@ ym(99115405, "init", {
             "https://openbsd.lynixnetwork.com",
             "https://digitaldeviceinfo.blogspot.com",
             "https://rspsidawangi.org",
-            "https://smaialazhar5.sch.id",
             "https://warungbentang.com",
             "https://www.lynix.id",
             "https://strawberrydelight.id",
             "https://nagiva.fit"
         ];
-       
-        function getRandomUrl(array) {
-            const randomIndex = Math.floor(Math.random() * array.length);
-            return array[randomIndex];
-        }
-        
-        function rotateSite() {
-            const randomUrl = getRandomUrl(urls);
+
+        function redirectToRandomUrl() {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            const randomUrl = urls[randomIndex];
             window.location.href = randomUrl;
         }
-
-        const rotationInterval = 60000;
-        setTimeout(rotateSite, rotationInterval);
+       
+        window.onload = redirectToRandomUrl;
     </script>
 </head>
 <body>
