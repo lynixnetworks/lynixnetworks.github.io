@@ -2,7 +2,7 @@
  * scripts.js
  * Menonaktifkan klik kanan, mencegah inspect element, dan mendeteksi Developer Tools
  * @author Lynix Networks
- * @version 1.1
+ * @version 1.2
  */
 
 function detectDevTools() {
@@ -18,10 +18,12 @@ document.addEventListener("keydown", function (e) {
         detectDevTools(); // Langsung jalankan deteksi Developer Tools
     } else if (
         (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
-        (e.ctrlKey && (e.key === "U" || e.key === "S"))
+        e.ctrlKey && (e.key === "U" || e.key === "S")
     ) {
         e.preventDefault();
+        e.stopPropagation(); // Mencegah event menyebar lebih lanjut
         alert("Akses ke sumber halaman dinonaktifkan!");
+        return false;
     }
 });
 
@@ -29,6 +31,13 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
     alert("Klik kanan dinonaktifkan!");
+});
+
+// Mencegah penggunaan "Save As" dengan menangkap event sebelum disimpan
+document.addEventListener("beforeprint", function (e) {
+    e.preventDefault();
+    alert("Pencetakan halaman dinonaktifkan!");
+    return false;
 });
 
 // Deteksi Developer Tools saat resize atau visibility berubah
