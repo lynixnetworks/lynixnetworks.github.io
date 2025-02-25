@@ -1,1 +1,35 @@
-function _0x56af(_0x11c607,_0x1f5714){var _0x222bff=_0x222b();return _0x56af=function(_0x56af54,_0x54f9af){_0x56af54=_0x56af54-0x1bb;var _0x4666c2=_0x222bff[_0x56af54];return _0x4666c2;},_0x56af(_0x11c607,_0x1f5714);}var _0xc2f8f6=_0x56af;(function(_0x37c224,_0x91b61){var _0x46d63d=_0x56af,_0x584bdf=_0x37c224();while(!![]){try{var _0x319e73=-parseInt(_0x46d63d(0x1ca))/0x1+parseInt(_0x46d63d(0x1cc))/0x2*(parseInt(_0x46d63d(0x1c9))/0x3)+parseInt(_0x46d63d(0x1c3))/0x4*(-parseInt(_0x46d63d(0x1c8))/0x5)+parseInt(_0x46d63d(0x1d3))/0x6+-parseInt(_0x46d63d(0x1d4))/0x7+parseInt(_0x46d63d(0x1c0))/0x8*(parseInt(_0x46d63d(0x1d1))/0x9)+parseInt(_0x46d63d(0x1d5))/0xa;if(_0x319e73===_0x91b61)break;else _0x584bdf['push'](_0x584bdf['shift']());}catch(_0x17e37e){_0x584bdf['push'](_0x584bdf['shift']());}}}(_0x222b,0x5c48b),document[_0xc2f8f6(0x1d0)](_0xc2f8f6(0x1d8),function(_0x3a2d98){var _0x1d8a0e=_0xc2f8f6;_0x3a2d98[_0x1d8a0e(0x1d2)]&&(_0x3a2d98[_0x1d8a0e(0x1bd)]==='u'||_0x3a2d98[_0x1d8a0e(0x1bd)]==='s')&&(_0x3a2d98[_0x1d8a0e(0x1d9)](),alert(_0x1d8a0e(0x1cd)));}),document[_0xc2f8f6(0x1d0)](_0xc2f8f6(0x1bb),function(_0x318281){var _0xcc86fe=_0xc2f8f6;_0x318281[_0xcc86fe(0x1d9)](),alert(_0xcc86fe(0x1be));}),(function(){var _0x558b91=_0xc2f8f6;function _0x3c2953(){var _0x2e0e3d=_0x56af,_0x536153=0xa0;(window[_0x2e0e3d(0x1c5)]-window[_0x2e0e3d(0x1bc)]>_0x536153||window[_0x2e0e3d(0x1c4)]-window[_0x2e0e3d(0x1c1)]>_0x536153)&&(window[_0x2e0e3d(0x1ce)]['href']='https://www.lynix.id');}window[_0x558b91(0x1d0)](_0x558b91(0x1cf),_0x3c2953),document[_0x558b91(0x1d0)](_0x558b91(0x1c2),function(){var _0x159603=_0x558b91;document[_0x159603(0x1c6)]===_0x159603(0x1d6)&&_0x3c2953();}),document[_0x558b91(0x1d0)](_0x558b91(0x1d8),function(_0x39bd7b){var _0x3e36f0=_0x558b91;(_0x39bd7b[_0x3e36f0(0x1bd)]===_0x3e36f0(0x1cb)||_0x39bd7b[_0x3e36f0(0x1d2)]&&_0x39bd7b[_0x3e36f0(0x1bf)]&&(_0x39bd7b[_0x3e36f0(0x1bd)]==='I'||_0x39bd7b[_0x3e36f0(0x1bd)]==='J'||_0x39bd7b['key']==='C')||_0x39bd7b['ctrlKey']&&_0x39bd7b[_0x3e36f0(0x1bd)]==='U')&&(_0x39bd7b['preventDefault'](),window[_0x3e36f0(0x1ce)][_0x3e36f0(0x1d7)]=_0x3e36f0(0x1c7));});}()));function _0x222b(){var _0x4898a2=['176XRKVxF','innerHeight','visibilitychange','437148YhLGSk','outerHeight','outerWidth','visibilityState','https://www.lynix.id','25YlvgzR','61899PixKPZ','715200EBwPFh','F12','24dOtaig','Akses\x20ke\x20sumber\x20halaman\x20dinonaktifkan!','location','resize','addEventListener','32004Tsybme','ctrlKey','1386078hRSPLp','1916544haJIsX','13565810AKdgMi','visible','href','keydown','preventDefault','contextmenu','innerWidth','key','Klik\x20kanan\x20dinonaktifkan!','shiftKey'];_0x222b=function(){return _0x4898a2;};return _0x222b();}
+document.addEventListener("keydown", function (e) {
+  if (e.ctrlKey && (e.key === "u" || e.key === "s")) {
+    e.preventDefault();
+    alert("Akses ke sumber halaman dinonaktifkan!");
+  }
+});
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  alert("Klik kanan dinonaktifkan!");
+});
+
+(function() {
+  function detectDevTools() {
+      var threshold = 160;
+      if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+          window.location.href = "https://www.lynix.id";
+      }
+  }
+
+  window.addEventListener("resize", detectDevTools);
+
+  document.addEventListener("visibilitychange", function() {
+      if (document.visibilityState === "visible") {
+          detectDevTools();
+      }
+  });
+
+  document.addEventListener("keydown", function(e) {
+      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || (e.ctrlKey && e.key === "U")) {
+          e.preventDefault();
+          window.location.href = "https://www.lynix.id";
+      }
+  });
+})();
