@@ -1,3 +1,5 @@
 User-agent: *
+Disallow: /phone/front-office.html
+Disallow: /phone/hp-front-office.html
 Allow: /
 Sitemap: https://lynixnetworks.github.io/sitemap.xml
