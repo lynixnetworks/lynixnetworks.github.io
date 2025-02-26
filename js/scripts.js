@@ -1,49 +1,41 @@
 /**
  * scripts.js
- * Menonaktifkan klik kanan, mencegah inspect element, dan mendeteksi Developer Tools
- * @author Lynix Networks
+  * @author Lynix Networks
  * @version 1.3
  */
 
-function detectDevTools() {
-    var threshold = 160; // Perbedaan ukuran jendela yang mencurigakan
-    if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
-        window.location.href = "https://www.lynix.id";
+ document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "u" || e.key === "s")) {
+      e.preventDefault();
+      alert("Akses ke sumber halaman dinonaktifkan!");
     }
-}
-
-// Mencegah shortcut Inspect Element dan View Source
-document.addEventListener("keydown", function (e) {
-    if (e.key === "F12") {
-        detectDevTools(); // Langsung jalankan deteksi Developer Tools
-    } else if (
-        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
-        e.ctrlKey && (e.key === "U" || e.key === "S")
-    ) {
-        e.preventDefault();
-        alert("Akses ke sumber halaman dinonaktifkan!");
-        return false;
-    }
-});
-
-// Mencegah klik kanan
-document.addEventListener("contextmenu", function (e) {
+  });
+  
+  document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
     alert("Klik kanan dinonaktifkan!");
-});
-
-// Mencegah pengguna menutup atau menyimpan halaman
-window.onbeforeunload = function (e) {
-    e.preventDefault();
-    e.returnValue = "Anda yakin ingin keluar?";
-};
-
-// Deteksi Developer Tools saat resize atau visibility berubah
-(function() {
+  });
+  
+  (function() {
+    function detectDevTools() {
+        var threshold = 160;
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+            window.location.href = "https://www.lynix.id";
+        }
+    }
+  
     window.addEventListener("resize", detectDevTools);
+  
     document.addEventListener("visibilitychange", function() {
         if (document.visibilityState === "visible") {
             detectDevTools();
         }
     });
-})();
+  
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || (e.ctrlKey && e.key === "U")) {
+            e.preventDefault();
+            window.location.href = "https://www.lynix.id";
+        }
+    });
+  })();
